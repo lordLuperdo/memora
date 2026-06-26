@@ -1,0 +1,185 @@
+
+> dev
+> nuxt dev --host 127.0.0.1 --port 3000
+
+|
+•  [32mNuxt [1m3.21.8[22m[39m[90m (with [39m[90mNitro [1m2.13.4[22m[39m[90m, Vite [1m7.3.5[22m[39m[90m and Vue [1m3.5.38[22m[39m[90m)[39m
+
+[32m  ➜ Local:   [39m [36m[4mhttp://127.0.0.1:[1m3000[22m/[24m[39m
+[90m  ➜ Network:  use [37m--host[90m to expose[39m
+
+[90m[[90mnuxt:tailwindcss[90m][39m [36mi[39m Using default Tailwind CSS file
+[33m  ➜ DevTools: [39m[2mpress [22m[32mShift[39m[2m + [22m[32mAlt[39m[2m + [22m[32mD[39m[2m in the browser (v3.2.4)[22m
+
+[36mi[39m Nuxt Icon server bundle mode is set to [36mlocal[39m
+[32m√[39m Vite client built in 113ms
+[32m√[39m Vite server built in 316ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mplugins.server.mjs[39m in 1911.97ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mplugins.client.mjs[39m in 2164.08ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/plugins.d.ts[39m in 2183.82ms
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 5445ms
+[36mi[39m Vite server warmed up in 4ms
+[36mi[39m Vite client warmed up in 8ms
+[32m√[39m Vite server hmr 1 files in 1490.035ms
+[43m[30m WARN [39m[49m [Vue warn]: Failed to resolve component: OfferCard
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+[43m[30m WARN [39m[49m [Vue warn]: Failed to resolve component: PersonalizerCard
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+[43m[30m WARN [39m[49m [Vue warn]: Failed to resolve component: InterestCard
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+[43m[30m WARN [39m[49m [Vue warn]: Failed to resolve component: CandleCustomizerFrame
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+[43m[30m WARN [39m[49m [Vue warn]: Failed to resolve component: CartSummary
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+[43m[30m WARN [39m[49m [Vue warn]: Component <Anonymous> is missing template or render function. at <Anonymous>
+at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+[43m[30m WARN [39m[49m [Vue warn]: Component <Anonymous> is missing template or render function. at <Anonymous>
+at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+[43m[30m WARN [39m[49m [Vue warn]: Component <Anonymous> is missing template or render function. at <Anonymous>
+at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+[43m[30m WARN [39m[49m [Vue warn]: Component <Anonymous> is missing template or render function. at <Anonymous>
+at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+[43m[30m WARN [39m[49m [Vue warn]: Component <Anonymous> is missing template or render function. at <Anonymous>
+at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+[43m[30m WARN [39m[49m [Vue warn]: Component <Anonymous> is missing template or render function. at <Anonymous>
+at <Index>
+at <RouteProvider>
+at <RouterView>
+at <NuxtPage>
+at <App>
+at <NuxtRoot>
+
+> dev
+> nuxt dev --host 127.0.0.1 --port 3000
+
+|
+•  [32mNuxt [1m3.21.8[22m[39m[90m (with [39m[90mNitro [1m2.13.4[22m[39m[90m, Vite [1m7.3.5[22m[39m[90m and Vue [1m3.5.38[22m[39m[90m)[39m
+
+[32m  ➜ Local:   [39m [36m[4mhttp://127.0.0.1:[1m3000[22m/[24m[39m
+[90m  ➜ Network:  use [37m--host[90m to expose[39m
+
+[90m[[90mnuxt:tailwindcss[90m][39m [36mi[39m Using default Tailwind CSS file
+[33m  ➜ DevTools: [39m[2mpress [22m[32mShift[39m[2m + [22m[32mAlt[39m[2m + [22m[32mD[39m[2m in the browser (v3.2.4)[22m
+
+[36mi[39m Nuxt Icon server bundle mode is set to [36mlocal[39m
+[32m√[39m Vite client built in 195ms
+[32m√[39m Vite server built in 1894ms
+
+[41m[30m ERROR [39m[49m Pre-transform error: Failed to resolve import "#app-manifest" from "node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/ACER/Desktop/memora/node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6[39m:16:6
+[33m  14 |        /* webpackIgnore: true */
+  15 |        /* @vite-ignore */
+  16 |        "#app-manifest"
+     |        ^
+  17 |      );
+  18 |    } else {[39m
+
+
+[41m[30m ERROR [39m[49m Pre-transform error: Failed to resolve import "#app-manifest" from "node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/ACER/Desktop/memora/node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6[39m:16:6
+[33m  14 |        /* webpackIgnore: true */
+  15 |        /* @vite-ignore */
+  16 |        "#app-manifest"
+     |        ^
+  17 |      );
+  18 |    } else {[39m[2m (x2)[22m
+
+
+[41m[30m ERROR [39m[49m Pre-transform error: Failed to resolve import "#app-manifest" from "node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/ACER/Desktop/memora/node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6[39m:16:6
+[33m  14 |        /* webpackIgnore: true */
+  15 |        /* @vite-ignore */
+  16 |        "#app-manifest"
+     |        ^
+  17 |      );
+  18 |    } else {[39m[2m (x3)[22m
+
+
+[41m[30m ERROR [39m[49m Pre-transform error: Failed to resolve import "#app-manifest" from "node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/ACER/Desktop/memora/node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6[39m:16:6
+[33m  14 |        /* webpackIgnore: true */
+  15 |        /* @vite-ignore */
+  16 |        "#app-manifest"
+     |        ^
+  17 |      );
+  18 |    } else {[39m[2m (x4)[22m
+
+
+[41m[30m ERROR [39m[49m Pre-transform error: Failed to resolve import "#app-manifest" from "node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/ACER/Desktop/memora/node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6[39m:16:6
+[33m  14 |        /* webpackIgnore: true */
+  15 |        /* @vite-ignore */
+  16 |        "#app-manifest"
+     |        ^
+  17 |      );
+  18 |    } else {[39m[2m (x5)[22m
+
+
+[41m[30m ERROR [39m[49m Pre-transform error: Failed to resolve import "#app-manifest" from "node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/ACER/Desktop/memora/node_modules/nuxt/dist/app/composables/manifest.js?v=98b232e6[39m:16:6
+[33m  14 |        /* webpackIgnore: true */
+  15 |        /* @vite-ignore */
+  16 |        "#app-manifest"
+     |        ^
+  17 |      );
+  18 |    } else {[39m[2m (x6)[22m
+
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 2772ms
+[36mi[39m Vite server warmed up in 4ms
+[36mi[39m Vite client warmed up in 9ms
