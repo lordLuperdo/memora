@@ -1,9 +1,12 @@
+const vercelSiteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || (vercelSiteUrl ? `https://${vercelSiteUrl}` : 'http://localhost:3000')
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
+      siteUrl
     }
   },
   experimental: {
