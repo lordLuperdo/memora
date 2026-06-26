@@ -471,7 +471,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BNtbPA0i.mjs')
+    component: () => import('./index--VhRM2HG.mjs')
   },
   {
     name: "veladetail",

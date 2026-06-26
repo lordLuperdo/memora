@@ -1,23 +1,32 @@
-import { _ as __nuxt_component_0 } from "./nuxt-link-ynl9qrS-.js";
-import { defineComponent, mergeProps, useSSRContext, unref, withCtx, createTextVNode, ref, computed } from "vue";
-import { ssrRenderAttrs, ssrRenderStyle, ssrRenderComponent, ssrInterpolate, ssrRenderAttr, ssrRenderList, ssrRenderClass } from "vue/server-renderer";
-import { U as UseDataEstore, u as useEssenceStore, _ as _sfc_main$4 } from "./FloatingCartPopup-Bvp2-c9H.js";
-import { storeToRefs } from "pinia";
-import __nuxt_component_1 from "./index-DwcbW_k1.js";
-import "C:/Users/ACER/Documents/yo/memora/node_modules/ufo/dist/index.mjs";
-import "../server.mjs";
-import "C:/Users/ACER/Documents/yo/memora/node_modules/ofetch/dist/node.mjs";
-import "#internal/nuxt/paths";
-import "C:/Users/ACER/Documents/yo/memora/node_modules/hookable/dist/index.mjs";
-import "C:/Users/ACER/Documents/yo/memora/node_modules/unctx/dist/index.mjs";
-import "C:/Users/ACER/Documents/yo/memora/node_modules/h3/dist/index.mjs";
-import "C:/Users/ACER/Documents/yo/memora/node_modules/defu/dist/defu.mjs";
-import "vue-router";
-import "C:/Users/ACER/Documents/yo/memora/node_modules/klona/dist/index.mjs";
-import "@iconify/vue";
-import "C:/Users/ACER/Documents/yo/memora/node_modules/@unhead/vue/dist/index.mjs";
-import "@iconify/utils/lib/css/icon";
-import "C:/Users/ACER/Documents/yo/memora/node_modules/perfect-debounce/dist/index.mjs";
+import { c as buildAssetsURL } from '../_/nitro.mjs';
+import { _ as __nuxt_component_0 } from './nuxt-link-ynl9qrS-.mjs';
+import { defineComponent, ref, computed, mergeProps, withCtx, createTextVNode, unref, useSSRContext } from 'file://C:/Users/ACER/Documents/yo/memora/node_modules/vue/index.mjs';
+import { ssrRenderAttrs, ssrRenderComponent, ssrRenderList, ssrRenderClass, ssrInterpolate, ssrRenderAttr, ssrRenderStyle } from 'file://C:/Users/ACER/Documents/yo/memora/node_modules/vue/server-renderer/index.mjs';
+import { U as UseDataEstore, u as useEssenceStore, _ as _sfc_main$4 } from './FloatingCartPopup-Bvp2-c9H.mjs';
+import { storeToRefs } from 'file://C:/Users/ACER/Documents/yo/memora/node_modules/pinia/dist/pinia.prod.cjs';
+import __nuxt_component_1 from './index-DwcbW_k1.mjs';
+import 'node:http';
+import 'node:https';
+import 'node:events';
+import 'node:buffer';
+import 'node:fs';
+import 'node:url';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/@iconify/utils/lib/index.mjs';
+import 'node:crypto';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/consola/dist/index.mjs';
+import 'node:path';
+import './server.mjs';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/vue-router/vue-router.node.mjs';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/@iconify/vue/dist/iconify.mjs';
+import '../routes/renderer.mjs';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/unhead/dist/server.mjs';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/devalue/index.js';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/unhead/dist/plugins.mjs';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/unhead/dist/utils.mjs';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/@iconify/utils/lib/css/icon.mjs';
+import 'file://C:/Users/ACER/Documents/yo/memora/node_modules/perfect-debounce/dist/index.mjs';
+
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "EssenceCard",
   __ssrInlineRender: true,
@@ -46,11 +55,11 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/elements/EssenceCard.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const vela = "" + __buildAssetsURL("memorahh1.B915DiRk.png");
-const moras = "" + __buildAssetsURL("moras.CpA5oUiD.png");
-const logo = "" + __buildAssetsURL("logo.QdU6F2XL.png");
-const cereza = "" + __buildAssetsURL("cerezas.B872_Fdr.png");
-const granos = "" + __buildAssetsURL("granos.ZT66zk_6.png");
+const vela = "" + buildAssetsURL("memorahh1.B915DiRk.png");
+const moras = "" + buildAssetsURL("moras.CpA5oUiD.png");
+const logo = "" + buildAssetsURL("logo.QdU6F2XL.png");
+const cereza = "" + buildAssetsURL("cerezas.B872_Fdr.png");
+const granos = "" + buildAssetsURL("granos.ZT66zk_6.png");
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "OfferCard",
   __ssrInlineRender: true,
@@ -61,17 +70,17 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   setup(__props, { emit: __emit }) {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtLink = __nuxt_component_0;
-      _push(`<section${ssrRenderAttrs(mergeProps({ class: "relative h-full w-full overflow-hidden bg-gradient-to-b from-memora-mist via-[#E5F4F8] to-[#F0FAFF] px-4 pb-10 pt-5 sm:px-6 md:min-h-screen md:px-10 md:py-10 lg:px-14" }, _attrs))}><div class="pointer-events-none absolute -left-40 -top-40 h-63 w-63 rounded-full"><img${ssrRenderAttr("src", unref(moras))} class="" alt=""></div><div class="pointer-events-none absolute -right-40 -top-40 h-63 w-63 rounded-full"><img${ssrRenderAttr("src", unref(moras))} class="scale-x-[-1]" alt=""></div><div class="md:mx-auto md:grid md:min-h-[calc(100vh-5rem)] md:max-w-6xl md:grid-cols-[0.9fr_1.1fr] md:items-center md:gap-x-10 lg:gap-x-16"><div class="flex justify-center items-center px-24 md:col-start-1 md:row-start-1 md:px-10 lg:px-16"><img${ssrRenderAttr("src", unref(logo))} class="max-w-full" alt=""></div><div class="mx-auto mt-4 w-fit rounded bg-memora-violet px-5 py-1 text-center text-2xl text-memora-mist font-semibold md:col-start-1 md:row-start-2 md:mt-6 md:text-3xl"> Oferta de la semana </div><p class="mx-auto mt-2 max-w-[260px] text-center text-lg font-bold text-memora-deep md:col-start-1 md:row-start-3 md:max-w-md md:text-xl"> Nuestra vela memora esta al alcance no te la pierdas. </p><div class="relative mx-auto mt-4 flex h-64 max-w-[300px] items-center justify-center md:col-start-2 md:row-span-4 md:row-start-1 md:mt-0 md:h-[400px] md:max-w-[440px] lg:h-[460px]"><div class="absolute left-1/2 top-7 z-0 h-44 w-44 -translate-x-1/2 rounded-full bg-memora-ink md:top-16 md:h-72 md:w-72"></div><img${ssrRenderAttr("src", unref(granos))} alt="" class="pointer-events-none absolute left-16 -top-0 z-0 w-20 -rotate-12 md:left-24 md:top-8 md:w-28"><div class="absolute -left-4 -rotate-12 top-14 h-22 w-22 rounded-full bg-mmora-rose z-20 md:left-0 md:top-40 md:h-32 md:w-32"><img${ssrRenderAttr("src", unref(cereza))} alt="" class=""></div><div class="absolute right-5 top-10 h-10 w-10 rounded-full bg-memora-ose z-0 md:right-4 md:top-28 md:h-20 md:w-20"><img${ssrRenderAttr("src", unref(cereza))} alt="" class=""></div><div class="relative z-10 h-56 rounded-b-3xl rounded-t-lg"><img${ssrRenderAttr("src", unref(vela))} class="relative h-48 -rotate-12 md:h-80" alt=""></div><span class="absolute bottom-16 -right-0 rounded-full z-20 bg-memora-blush px-3 py-1 text-lg font-bold text-memora-violet md:bottom-16 md:right-2 md:px-5 md:py-2 md:text-2xl">${ssrInterpolate(new Intl.NumberFormat("es-CO", { style: "currency", currency: "COP", maximumFractionDigits: 0 }).format(__props.price))}</span></div><div class="mt-4 flex justify-center gap-2 md:col-start-1 md:row-start-4 md:mt-8 md:flex-wrap"><button class="rounded bg-memora-violet px-4 py-2 text-lg font-bold text-white"> Agregar al carrito </button>`);
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "relative h-full w-full overflow-hidden bg-gradient-to-b from-memora-mist via-[#E5F4F8] to-[#F0FAFF] px-4 pb-10 pt-5 sm:px-6 md:min-h-screen md:px-10 md:py-10 lg:px-14" }, _attrs))}><div class="pointer-events-none absolute -left-40 -top-40 h-63 w-63 rounded-full"><img${ssrRenderAttr("src", unref(moras))} class="" alt=""></div><div class="pointer-events-none absolute -right-40 -top-40 h-63 w-63 rounded-full"><img${ssrRenderAttr("src", unref(moras))} class="scale-x-[-1]" alt=""></div><div class="md:mx-auto md:min-h-[calc(100vh-5rem)] md:max-w-6xl md:grid-cols-[0.9fr_1.1fr] md:items-center md:gap-x-10 lg:gap-x-16"><div class="flex justify-center items-center px-24 md:col-start-1 md:row-start-1 md:px-10 lg:px-16"><img${ssrRenderAttr("src", unref(logo))} class="max-w-full lg:w-60" alt=""></div><div class="mx-auto mt-4 w-fit rounded bg-memora-violet px-5 py-1 text-center text-2xl text-memora-mist font-semibold md:col-start-1 md:row-start-2 md:text-3xl lg:text-6xl"> Oferta de la semana </div><p class="mx-auto mt-2 max-w-[260px] text-center text-lg font-bold text-memora-deep md:col-start-1 md:row-start-3 md:max-w-md md:text-xl"> Nuestra vela memora esta al alcance no te la pierdas. </p><div class="relative mx-auto mt-4 flex h-64 max-w-[300px] items-center justify-center md:col-start-2 md:row-span-4 md:row-start-1 md:mt-0 md:h-[400px] md:max-w-[440px] lg:h-[460px]"><div class="absolute left-1/2 top-7 z-0 h-44 w-44 -translate-x-1/2 rounded-full bg-memora-ink md:top-16 md:h-60 md:w-60"></div><img${ssrRenderAttr("src", unref(granos))} alt="" class="pointer-events-none absolute left-16 -top-0 z-0 w-20 -rotate-12 md:-left-10 md:top-16 md:w-28"><div class="absolute -left-4 -rotate-12 top-14 h-22 w-22 rounded-full bg-mmora-rose z-20 md:-left-10 md:top-56 md:h-32 md:w-32"><img${ssrRenderAttr("src", unref(cereza))} alt="" class=""></div><div class="absolute right-5 top-10 h-10 w-10 rounded-full bg-memora-ose z-0 md:-right-10 md:top-28 md:h-20 md:w-20"><img${ssrRenderAttr("src", unref(cereza))} alt="" class=""></div><div class="relative z-10 h-56 rounded-b-3xl rounded-t-lg"><img${ssrRenderAttr("src", unref(vela))} class="relative h-48 -rotate-12 md:h-64" alt=""></div><span class="absolute bottom-16 -right-0 rounded-full z-20 bg-memora-blush px-3 py-1 text-lg font-bold text-memora-violet md:bottom-16 md:-right-20 md:px-5 md:py-2 md:text-2xl">${ssrInterpolate(new Intl.NumberFormat("es-CO", { style: "currency", currency: "COP", maximumFractionDigits: 0 }).format(__props.price))}</span></div><div class="mt-4 flex justify-center gap-2 md:col-start-1 md:row-start-4 md:mt-8 md:flex-wrap"><button class="rounded bg-memora-violet px-4 py-2 text-lg font-bold text-white"> Agregar al carrito </button>`);
       _push(ssrRenderComponent(_component_NuxtLink, {
         to: "/veladetail",
         class: "rounded border border-memora-violet px-4 py-2 text-lg font-bold text-memora-violet"
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(` Conocer más `);
+            _push2(` Conocer m\xE1s `);
           } else {
             return [
-              createTextVNode(" Conocer más ")
+              createTextVNode(" Conocer m\xE1s ")
             ];
           }
         }),
@@ -94,7 +103,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     const steps = ["Color", "Forma", "Aroma"];
     const featuredCandles = [
       { src: "/images/velas/velacubo-floresrosa.png", alt: "Vela cubo floral rosa" },
-      { src: "/images/velas/velaarbol-floralverde.png", alt: "Vela árbol floral verde" },
+      { src: "/images/velas/velaarbol-floralverde.png", alt: "Vela \xE1rbol floral verde" },
       { src: "/images/velas/velacilindro-corazonescrema.png", alt: "Vela cilindro de corazones crema" },
       { src: "/images/velas/velaoso-floralazul.png", alt: "Vela oso floral azul" }
     ];
@@ -214,7 +223,6 @@ _sfc_main.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-export {
-  _sfc_main as default
-};
-//# sourceMappingURL=index-BNtbPA0i.js.map
+
+export { _sfc_main as default };
+//# sourceMappingURL=index--VhRM2HG.mjs.map

@@ -462,7 +462,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-BNtbPA0i.js")
+    component: () => import("./_nuxt/index--VhRM2HG.js")
   },
   {
     name: "veladetail",

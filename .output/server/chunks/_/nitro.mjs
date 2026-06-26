@@ -4224,7 +4224,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "4d9cf2d3-5f74-45d9-8342-8d59c6ce85d5",
+    "buildId": "fb34d2a7-5676-4b04-9527-0d3218a15d3f",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -4698,6 +4698,13 @@ const plugins = [
 ];
 
 const assets = {
+  "/favicon.ico": {
+    "type": "image/vnd.microsoft.icon",
+    "etag": "\"188ae-KXVwpRImpczzRNcrohcH9m0hgyM\"",
+    "mtime": "2026-06-24T02:32:48.676Z",
+    "size": 100526,
+    "path": "../public/favicon.ico"
+  },
   "/fonts/Mollie-Glaston.otf": {
     "type": "font/otf",
     "etag": "\"6df0-g/vg1q0fW+L2639efae4f1ahWtk\"",
@@ -4708,114 +4715,93 @@ const assets = {
   "/_nuxt/cerezas.B872_Fdr.png": {
     "type": "image/png",
     "etag": "\"4f2e-zAJOAG0vPs36EDaxrE2vs+9mCBQ\"",
-    "mtime": "2026-06-24T02:32:44.848Z",
+    "mtime": "2026-06-26T03:25:35.875Z",
     "size": 20270,
     "path": "../public/_nuxt/cerezas.B872_Fdr.png"
   },
-  "/_nuxt/-1Y1jwgn.js": {
+  "/_nuxt/a_hsx_0V.js": {
     "type": "text/javascript; charset=utf-8",
-    "etag": "\"1e31-VMgpBaxMUkaT8SzqH/zRLt6fFlI\"",
-    "mtime": "2026-06-24T02:32:44.856Z",
-    "size": 7729,
-    "path": "../public/_nuxt/-1Y1jwgn.js"
-  },
-  "/_nuxt/CGbHjRrA.js": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"d45-qMT5j+dVxAJJINkopP7cyVXBklg\"",
-    "mtime": "2026-06-24T02:32:44.855Z",
-    "size": 3397,
-    "path": "../public/_nuxt/CGbHjRrA.js"
-  },
-  "/_nuxt/BSyieKis.js": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"1e19-8yZZbz3GSHFlf6QAtKvsz7S4toU\"",
-    "mtime": "2026-06-24T02:32:44.856Z",
+    "etag": "\"1e19-d6i8NdmN+L6hgCfm7j1W1t03LAA\"",
+    "mtime": "2026-06-26T03:25:35.880Z",
     "size": 7705,
-    "path": "../public/_nuxt/BSyieKis.js"
+    "path": "../public/_nuxt/a_hsx_0V.js"
+  },
+  "/_nuxt/CVP7_m0Z.js": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"160d-V4pIQb6IlNgiGPsOaV2y78Xu0/M\"",
+    "mtime": "2026-06-26T03:25:35.876Z",
+    "size": 5645,
+    "path": "../public/_nuxt/CVP7_m0Z.js"
   },
   "/_nuxt/DlAUqK2U.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"5b-eFCz/UrraTh721pgAl0VxBNR1es\"",
-    "mtime": "2026-06-24T02:32:44.855Z",
+    "mtime": "2026-06-26T03:25:35.875Z",
     "size": 91,
     "path": "../public/_nuxt/DlAUqK2U.js"
   },
   "/_nuxt/error-404.DL_4WIao.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"dca-KnjyV0UbpsrliiJzZx69defY74k\"",
-    "mtime": "2026-06-24T02:32:44.850Z",
+    "mtime": "2026-06-26T03:25:35.875Z",
     "size": 3530,
     "path": "../public/_nuxt/error-404.DL_4WIao.css"
   },
-  "/_nuxt/granos.ZT66zk_6.png": {
-    "type": "image/png",
-    "etag": "\"2a5a-qFDzuKaMHF8dQEj8w7iM+u6XOjQ\"",
-    "mtime": "2026-06-24T02:32:44.850Z",
-    "size": 10842,
-    "path": "../public/_nuxt/granos.ZT66zk_6.png"
+  "/_nuxt/CRkMT3Il.js": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"2194-+3ALy2jMi7uy0/Gjuk8ptPcV6Ko\"",
+    "mtime": "2026-06-26T03:25:35.876Z",
+    "size": 8596,
+    "path": "../public/_nuxt/CRkMT3Il.js"
   },
   "/_nuxt/error-500.I1Dtv2V5.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"75a-vEGyJqldBVJrnMfcLsrGaHcxYl0\"",
-    "mtime": "2026-06-24T02:32:44.850Z",
+    "mtime": "2026-06-26T03:25:35.875Z",
     "size": 1882,
     "path": "../public/_nuxt/error-500.I1Dtv2V5.css"
   },
-  "/_nuxt/Cx29QitH.js": {
+  "/_nuxt/BKc-bXqg.js": {
     "type": "text/javascript; charset=utf-8",
-    "etag": "\"160d-7CdbgNHTYcHT3lc/58qQr41CgsE\"",
-    "mtime": "2026-06-24T02:32:44.856Z",
-    "size": 5645,
-    "path": "../public/_nuxt/Cx29QitH.js"
+    "etag": "\"32ec8-t4SIEcyrFL5rtk+M6o5mjVGkvnY\"",
+    "mtime": "2026-06-26T03:25:35.875Z",
+    "size": 208584,
+    "path": "../public/_nuxt/BKc-bXqg.js"
+  },
+  "/_nuxt/DdY9fN9T.js": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"eb2-Od1+K7XfzfaGr8A/xBEBLjiiOEU\"",
+    "mtime": "2026-06-26T03:25:35.876Z",
+    "size": 3762,
+    "path": "../public/_nuxt/DdY9fN9T.js"
   },
   "/_nuxt/logo.QdU6F2XL.png": {
     "type": "image/png",
     "etag": "\"557f-PTeFnME8FObculNDKHUQ8fCjK34\"",
-    "mtime": "2026-06-24T02:32:44.833Z",
+    "mtime": "2026-06-26T03:25:35.875Z",
     "size": 21887,
     "path": "../public/_nuxt/logo.QdU6F2XL.png"
+  },
+  "/_nuxt/granos.ZT66zk_6.png": {
+    "type": "image/png",
+    "etag": "\"2a5a-qFDzuKaMHF8dQEj8w7iM+u6XOjQ\"",
+    "mtime": "2026-06-26T03:25:35.875Z",
+    "size": 10842,
+    "path": "../public/_nuxt/granos.ZT66zk_6.png"
   },
   "/_nuxt/memorahh1.B915DiRk.png": {
     "type": "image/png",
     "etag": "\"d085-bg5wEUyXQspT7XAHc9ZVN/OiqSc\"",
-    "mtime": "2026-06-24T02:32:44.847Z",
+    "mtime": "2026-06-26T03:25:35.874Z",
     "size": 53381,
     "path": "../public/_nuxt/memorahh1.B915DiRk.png"
-  },
-  "/_nuxt/DBl8e9Tz.js": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"eb2-PnOFa1JJcLR/IxNZX2bXE0XFGGw\"",
-    "mtime": "2026-06-24T02:32:44.853Z",
-    "size": 3762,
-    "path": "../public/_nuxt/DBl8e9Tz.js"
-  },
-  "/_nuxt/CGK5MqQW.js": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"32ec8-xBay7OVpUvdxx5COU6ZVa9ewyT4\"",
-    "mtime": "2026-06-24T02:32:44.853Z",
-    "size": 208584,
-    "path": "../public/_nuxt/CGK5MqQW.js"
-  },
-  "/images/velas/.gitkeep": {
-    "type": "text/plain; charset=utf-8",
-    "etag": "\"1-rcg7GeeTSRscbqD9i0bNnzLlkvw\"",
-    "mtime": "2026-06-21T16:56:32.727Z",
-    "size": 1,
-    "path": "../public/images/velas/.gitkeep"
   },
   "/_nuxt/moras.CpA5oUiD.png": {
     "type": "image/png",
     "etag": "\"18e0a-R7q1cG8tuMyqO2KWgmt8s36w0fQ\"",
-    "mtime": "2026-06-24T02:32:44.848Z",
+    "mtime": "2026-06-26T03:25:35.875Z",
     "size": 101898,
     "path": "../public/_nuxt/moras.CpA5oUiD.png"
-  },
-  "/_nuxt/k9voCaBl.js": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"19e2-LW+jM7HXKY9lujHAp+FXNeFRQ8s\"",
-    "mtime": "2026-06-24T02:32:44.856Z",
-    "size": 6626,
-    "path": "../public/_nuxt/k9voCaBl.js"
   },
   "/images/social/memora-catalogo.jpg": {
     "type": "image/jpeg",
@@ -4824,12 +4810,33 @@ const assets = {
     "size": 127706,
     "path": "../public/images/social/memora-catalogo.jpg"
   },
-  "/images/velas/velaarbol-floralrosa.png": {
+  "/images/velas/.gitkeep": {
+    "type": "text/plain; charset=utf-8",
+    "etag": "\"1-rcg7GeeTSRscbqD9i0bNnzLlkvw\"",
+    "mtime": "2026-06-21T16:56:32.727Z",
+    "size": 1,
+    "path": "../public/images/velas/.gitkeep"
+  },
+  "/_nuxt/Dw9HYSMt.js": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"1e31-hKnFxbNfMO/1s58UvkeQy+LiF/A\"",
+    "mtime": "2026-06-26T03:25:35.876Z",
+    "size": 7729,
+    "path": "../public/_nuxt/Dw9HYSMt.js"
+  },
+  "/_nuxt/_VNz942L.js": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"d45-eTrKxHJ+peHbFYRvFkkpd0Ov1JY\"",
+    "mtime": "2026-06-26T03:25:35.875Z",
+    "size": 3397,
+    "path": "../public/_nuxt/_VNz942L.js"
+  },
+  "/images/velas/velaarbol-floralazul.png": {
     "type": "image/png",
-    "etag": "\"6a070-eXdJtya7Or5MwsQjeKRaAZpds2M\"",
-    "mtime": "2026-06-21T19:10:56.399Z",
-    "size": 434288,
-    "path": "../public/images/velas/velaarbol-floralrosa.png"
+    "etag": "\"6a06f-UR8sU/bi0Cd1w7/28LFDsm3Wnts\"",
+    "mtime": "2026-06-21T19:10:58.003Z",
+    "size": 434287,
+    "path": "../public/images/velas/velaarbol-floralazul.png"
   },
   "/images/velas/velaarbol-floralcrema.png": {
     "type": "image/png",
@@ -4838,12 +4845,12 @@ const assets = {
     "size": 432905,
     "path": "../public/images/velas/velaarbol-floralcrema.png"
   },
-  "/images/velas/velaarbol-floralazul.png": {
+  "/images/velas/velaarbol-floralrosa.png": {
     "type": "image/png",
-    "etag": "\"6a06f-UR8sU/bi0Cd1w7/28LFDsm3Wnts\"",
-    "mtime": "2026-06-21T19:10:58.003Z",
-    "size": 434287,
-    "path": "../public/images/velas/velaarbol-floralazul.png"
+    "etag": "\"6a070-eXdJtya7Or5MwsQjeKRaAZpds2M\"",
+    "mtime": "2026-06-21T19:10:56.399Z",
+    "size": 434288,
+    "path": "../public/images/velas/velaarbol-floralrosa.png"
   },
   "/images/velas/velaarbol-floralverde.png": {
     "type": "image/png",
@@ -4859,19 +4866,19 @@ const assets = {
     "size": 400217,
     "path": "../public/images/velas/velacaja-rosasazul.png"
   },
+  "/_nuxt/T57QueFt.js": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"19e2-hBwMG/6z8OECB12sPctkJkKD78k\"",
+    "mtime": "2026-06-26T03:25:35.880Z",
+    "size": 6626,
+    "path": "../public/_nuxt/T57QueFt.js"
+  },
   "/images/velas/velacaja-rosascrema.png": {
     "type": "image/png",
     "etag": "\"6003c-n75woVGxuqJVmp7JNNG2XdhEbFg\"",
     "mtime": "2026-06-21T19:11:04.143Z",
     "size": 393276,
     "path": "../public/images/velas/velacaja-rosascrema.png"
-  },
-  "/_nuxt/zp9NitDw.js": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"2188-BExvZJs3nZQdQTCBjhxcmwk8FaE\"",
-    "mtime": "2026-06-24T02:32:44.856Z",
-    "size": 8584,
-    "path": "../public/_nuxt/zp9NitDw.js"
   },
   "/images/velas/velacaja-rosasrosa.png": {
     "type": "image/png",
@@ -4880,12 +4887,26 @@ const assets = {
     "size": 398493,
     "path": "../public/images/velas/velacaja-rosasrosa.png"
   },
+  "/images/velas/velacilindro-burbujasazul.png": {
+    "type": "image/png",
+    "etag": "\"5ded9-NeIMlh9fPL6F4ZS9dFwu0Tb/Apk\"",
+    "mtime": "2026-06-21T19:10:50.755Z",
+    "size": 384729,
+    "path": "../public/images/velas/velacilindro-burbujasazul.png"
+  },
   "/images/velas/velacaja-rosasverde.png": {
     "type": "image/png",
     "etag": "\"6312c-E+Lt+HYdb+/K3YdEdq5Vk8yBeGc\"",
     "mtime": "2026-06-21T19:11:03.508Z",
     "size": 405804,
     "path": "../public/images/velas/velacaja-rosasverde.png"
+  },
+  "/images/velas/velacilindro-burbujasrosa.png": {
+    "type": "image/png",
+    "etag": "\"5e432-oAoPGSn385LIxGJ32CQYlR6PKOM\"",
+    "mtime": "2026-06-21T19:10:48.911Z",
+    "size": 386098,
+    "path": "../public/images/velas/velacilindro-burbujasrosa.png"
   },
   "/images/velas/velacilindro-burbujascrema.png": {
     "type": "image/png",
@@ -4894,26 +4915,12 @@ const assets = {
     "size": 384181,
     "path": "../public/images/velas/velacilindro-burbujascrema.png"
   },
-  "/images/velas/velacilindro-burbujasazul.png": {
-    "type": "image/png",
-    "etag": "\"5ded9-NeIMlh9fPL6F4ZS9dFwu0Tb/Apk\"",
-    "mtime": "2026-06-21T19:10:50.755Z",
-    "size": 384729,
-    "path": "../public/images/velas/velacilindro-burbujasazul.png"
-  },
   "/images/velas/velacilindro-burbujasverde.png": {
     "type": "image/png",
     "etag": "\"620f3-/oTiALhVgzu92OaHydCPZdIPYfo\"",
     "mtime": "2026-06-21T19:10:49.456Z",
     "size": 401651,
     "path": "../public/images/velas/velacilindro-burbujasverde.png"
-  },
-  "/images/velas/velacilindro-burbujasrosa.png": {
-    "type": "image/png",
-    "etag": "\"5e432-oAoPGSn385LIxGJ32CQYlR6PKOM\"",
-    "mtime": "2026-06-21T19:10:48.911Z",
-    "size": 386098,
-    "path": "../public/images/velas/velacilindro-burbujasrosa.png"
   },
   "/images/velas/velacilindro-corazonesazul.png": {
     "type": "image/png",
@@ -4978,13 +4985,6 @@ const assets = {
     "size": 404189,
     "path": "../public/images/velas/velacubo-floresazul.png"
   },
-  "/images/velas/velaoso-floralazul.png": {
-    "type": "image/png",
-    "etag": "\"6587a-HruQBZC1MrwKDL3ufpNipysLKUc\"",
-    "mtime": "2026-06-21T19:11:06.971Z",
-    "size": 415866,
-    "path": "../public/images/velas/velaoso-floralazul.png"
-  },
   "/images/velas/velacubo-florescrema.png": {
     "type": "image/png",
     "etag": "\"62ab9-0qaK8K6rosoh8gl6skYC5c1b5PA\"",
@@ -4999,19 +4999,33 @@ const assets = {
     "size": 404705,
     "path": "../public/images/velas/velacubo-floresrosa.png"
   },
-  "/images/velas/velaoso-floralrosa.png": {
-    "type": "image/png",
-    "etag": "\"687de-6HcuaWG1iU5+aehesVKDuhviSCE\"",
-    "mtime": "2026-06-21T19:11:05.303Z",
-    "size": 427998,
-    "path": "../public/images/velas/velaoso-floralrosa.png"
-  },
   "/images/velas/velacubo-floresverde.png": {
     "type": "image/png",
     "etag": "\"66ca4-iSXDPyBZdzq61gmIhoWrgqr4dLM\"",
     "mtime": "2026-06-21T19:11:08.525Z",
     "size": 421028,
     "path": "../public/images/velas/velacubo-floresverde.png"
+  },
+  "/images/velas/velaoso-floralazul.png": {
+    "type": "image/png",
+    "etag": "\"6587a-HruQBZC1MrwKDL3ufpNipysLKUc\"",
+    "mtime": "2026-06-21T19:11:06.971Z",
+    "size": 415866,
+    "path": "../public/images/velas/velaoso-floralazul.png"
+  },
+  "/images/velas/velaoso-floralcrema.png": {
+    "type": "image/png",
+    "etag": "\"67674-TaYJtizHl3pZEDwhq5zDsl1R2OI\"",
+    "mtime": "2026-06-21T19:11:06.397Z",
+    "size": 423540,
+    "path": "../public/images/velas/velaoso-floralcrema.png"
+  },
+  "/images/velas/velaoso-floralrosa.png": {
+    "type": "image/png",
+    "etag": "\"687de-6HcuaWG1iU5+aehesVKDuhviSCE\"",
+    "mtime": "2026-06-21T19:11:05.303Z",
+    "size": 427998,
+    "path": "../public/images/velas/velaoso-floralrosa.png"
   },
   "/images/velas/velaoso-floralverde.png": {
     "type": "image/png",
@@ -5034,13 +5048,6 @@ const assets = {
     "size": 420545,
     "path": "../public/images/velas/velaquemador-clasicocrema.png"
   },
-  "/images/velas/velaoso-floralcrema.png": {
-    "type": "image/png",
-    "etag": "\"67674-TaYJtizHl3pZEDwhq5zDsl1R2OI\"",
-    "mtime": "2026-06-21T19:11:06.397Z",
-    "size": 423540,
-    "path": "../public/images/velas/velaoso-floralcrema.png"
-  },
   "/images/velas/velaquemador-clasicorosa.png": {
     "type": "image/png",
     "etag": "\"67e24-typWEp1WMHTOxl+RKeD+HKE+EjE\"",
@@ -5054,6 +5061,13 @@ const assets = {
     "mtime": "2026-06-21T19:10:47.292Z",
     "size": 426491,
     "path": "../public/images/velas/velaquemador-clasicoverde.png"
+  },
+  "/images/velas/velaquemador-cuadradocrema.png": {
+    "type": "image/png",
+    "etag": "\"62a89-1FyAz+pRjR+UIt6cpSn6/OZr5nE\"",
+    "mtime": "2026-06-21T19:10:59.486Z",
+    "size": 404105,
+    "path": "../public/images/velas/velaquemador-cuadradocrema.png"
   },
   "/images/velas/velaquemador-cuadradoazul.png": {
     "type": "image/png",
@@ -5069,12 +5083,12 @@ const assets = {
     "size": 410868,
     "path": "../public/images/velas/velaquemador-cuadradorosa.png"
   },
-  "/images/velas/velaquemador-cuadradocrema.png": {
+  "/images/velas/velaquemador-curvoazul.png": {
     "type": "image/png",
-    "etag": "\"62a89-1FyAz+pRjR+UIt6cpSn6/OZr5nE\"",
-    "mtime": "2026-06-21T19:10:59.486Z",
-    "size": 404105,
-    "path": "../public/images/velas/velaquemador-cuadradocrema.png"
+    "etag": "\"560ce-l4lYYbRrR/eY/Ppyi74ViRYAE40\"",
+    "mtime": "2026-06-21T19:10:53.395Z",
+    "size": 352462,
+    "path": "../public/images/velas/velaquemador-curvoazul.png"
   },
   "/images/velas/velaquemador-cuadradoverde.png": {
     "type": "image/png",
@@ -5083,40 +5097,12 @@ const assets = {
     "size": 413758,
     "path": "../public/images/velas/velaquemador-cuadradoverde.png"
   },
-  "/images/velas/velaquemador-curvocrema.png": {
-    "type": "image/png",
-    "etag": "\"5507f-hFV2FMzfE7eeSIo11SBEvvg5YtE\"",
-    "mtime": "2026-06-21T19:10:52.730Z",
-    "size": 348287,
-    "path": "../public/images/velas/velaquemador-curvocrema.png"
-  },
   "/images/velas/icons/arbol-floral.svg": {
     "type": "image/svg+xml",
     "etag": "\"14b-z4rtDklIAeElqOBOJI4Pol8vkI4\"",
     "mtime": "2026-06-21T23:47:33.117Z",
     "size": 331,
     "path": "../public/images/velas/icons/arbol-floral.svg"
-  },
-  "/images/velas/velaquemador-curvoazul.png": {
-    "type": "image/png",
-    "etag": "\"560ce-l4lYYbRrR/eY/Ppyi74ViRYAE40\"",
-    "mtime": "2026-06-21T19:10:53.395Z",
-    "size": 352462,
-    "path": "../public/images/velas/velaquemador-curvoazul.png"
-  },
-  "/images/velas/velaquemador-curvorosa.png": {
-    "type": "image/png",
-    "etag": "\"56044-j6VIHwyDMg/Ua/6bJpWzMPSoBkk\"",
-    "mtime": "2026-06-21T19:10:51.456Z",
-    "size": 352324,
-    "path": "../public/images/velas/velaquemador-curvorosa.png"
-  },
-  "/images/velas/icons/cilindro-burbujas.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"27d-oxDzmKfrh4Qp5daMDAgr3+/OiJg\"",
-    "mtime": "2026-06-21T23:47:28.527Z",
-    "size": 637,
-    "path": "../public/images/velas/icons/cilindro-burbujas.svg"
   },
   "/images/velas/icons/caja-rosas.svg": {
     "type": "image/svg+xml",
@@ -5125,6 +5111,13 @@ const assets = {
     "size": 366,
     "path": "../public/images/velas/icons/caja-rosas.svg"
   },
+  "/images/velas/icons/cilindro-burbujas.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"27d-oxDzmKfrh4Qp5daMDAgr3+/OiJg\"",
+    "mtime": "2026-06-21T23:47:28.527Z",
+    "size": 637,
+    "path": "../public/images/velas/icons/cilindro-burbujas.svg"
+  },
   "/images/velas/icons/cilindro-corazones.svg": {
     "type": "image/svg+xml",
     "etag": "\"122-KUrqAWPUmA8pFHg6LLxyWDNnK7A\"",
@@ -5132,12 +5125,12 @@ const assets = {
     "size": 290,
     "path": "../public/images/velas/icons/cilindro-corazones.svg"
   },
-  "/images/velas/velaquemador-curvoverde.png": {
+  "/images/velas/velaquemador-curvocrema.png": {
     "type": "image/png",
-    "etag": "\"5732f-RaFrHtiR4zAc/Npc+cGMWm5GKro\"",
-    "mtime": "2026-06-21T19:10:52.057Z",
-    "size": 357167,
-    "path": "../public/images/velas/velaquemador-curvoverde.png"
+    "etag": "\"5507f-hFV2FMzfE7eeSIo11SBEvvg5YtE\"",
+    "mtime": "2026-06-21T19:10:52.730Z",
+    "size": 348287,
+    "path": "../public/images/velas/velaquemador-curvocrema.png"
   },
   "/images/velas/icons/cubo-burbujas.svg": {
     "type": "image/svg+xml",
@@ -5160,13 +5153,6 @@ const assets = {
     "size": 430,
     "path": "../public/images/velas/icons/oso-floral.svg"
   },
-  "/images/velas/icons/quemador-clasico.svg": {
-    "type": "image/svg+xml",
-    "etag": "\"12d-e2HOsyv95PUsfcroRUYFxHr+xJg\"",
-    "mtime": "2026-06-21T23:47:26.945Z",
-    "size": 301,
-    "path": "../public/images/velas/icons/quemador-clasico.svg"
-  },
   "/images/velas/icons/quemador-cuadrado.svg": {
     "type": "image/svg+xml",
     "etag": "\"12b-doL2r6+QPIIVTb4DCoChM881NQo\"",
@@ -5174,12 +5160,33 @@ const assets = {
     "size": 299,
     "path": "../public/images/velas/icons/quemador-cuadrado.svg"
   },
+  "/images/velas/icons/quemador-clasico.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"12d-e2HOsyv95PUsfcroRUYFxHr+xJg\"",
+    "mtime": "2026-06-21T23:47:26.945Z",
+    "size": 301,
+    "path": "../public/images/velas/icons/quemador-clasico.svg"
+  },
+  "/images/velas/velaquemador-curvorosa.png": {
+    "type": "image/png",
+    "etag": "\"56044-j6VIHwyDMg/Ua/6bJpWzMPSoBkk\"",
+    "mtime": "2026-06-21T19:10:51.456Z",
+    "size": 352324,
+    "path": "../public/images/velas/velaquemador-curvorosa.png"
+  },
   "/images/velas/icons/quemador-curvo.svg": {
     "type": "image/svg+xml",
     "etag": "\"154-Fy9SVGUYMaOV4vYKbsy/zxrfoX4\"",
     "mtime": "2026-06-21T23:47:30.081Z",
     "size": 340,
     "path": "../public/images/velas/icons/quemador-curvo.svg"
+  },
+  "/images/velas/velaquemador-curvoverde.png": {
+    "type": "image/png",
+    "etag": "\"5732f-RaFrHtiR4zAc/Npc+cGMWm5GKro\"",
+    "mtime": "2026-06-21T19:10:52.057Z",
+    "size": 357167,
+    "path": "../public/images/velas/velaquemador-curvoverde.png"
   }
 };
 
