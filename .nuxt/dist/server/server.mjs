@@ -3,7 +3,7 @@ import { $fetch as $fetch$1 } from "C:/Users/ACER/Documents/yo/memora/node_modul
 import { baseURL } from "#internal/nuxt/paths";
 import { createHooks } from "C:/Users/ACER/Documents/yo/memora/node_modules/hookable/dist/index.mjs";
 import { getContext, executeAsync } from "C:/Users/ACER/Documents/yo/memora/node_modules/unctx/dist/index.mjs";
-import { sanitizeStatusCode, createError as createError$1, getRequestURL } from "C:/Users/ACER/Documents/yo/memora/node_modules/h3/dist/index.mjs";
+import { sanitizeStatusCode, createError as createError$1, appendHeader } from "C:/Users/ACER/Documents/yo/memora/node_modules/h3/dist/index.mjs";
 import { shouldHydrate, createPinia, setActivePinia } from "pinia";
 import { defu, defuFn } from "C:/Users/ACER/Documents/yo/memora/node_modules/defu/dist/defu.mjs";
 import { START_LOCATION, createMemoryHistory, createRouter, RouterView } from "vue-router";
@@ -23,6 +23,7 @@ if (!("global" in globalThis)) {
 const nuxtLinkDefaults = { "componentName": "NuxtLink" };
 const asyncDataDefaults = { "value": null, "errorValue": null, "deep": true };
 const appId = "nuxt-app";
+const crawlLinks = true;
 function getNuxtAppCtx(id = appId) {
   return getContext(id, {
     asyncContext: false
@@ -237,6 +238,9 @@ function defineGetter(obj, key, val) {
 }
 const LayoutMetaSymbol = /* @__PURE__ */ Symbol("layout-meta");
 const PageRouteSymbol = /* @__PURE__ */ Symbol("route");
+function toArray$1(value) {
+  return Array.isArray(value) ? value : [value];
+}
 import.meta.url.replace(/\/app\/.*$/, "/");
 const useRouter = () => {
   return useNuxtApp()?.$router;
@@ -557,6 +561,7 @@ const configRouterOptions = {
   hashMode: false,
   scrollBehaviorType: "auto"
 };
+const hashMode = false;
 const routerOptions = {
   ...configRouterOptions,
   ...routerOptions0
@@ -601,7 +606,7 @@ const plugin$1 = /* @__PURE__ */ defineNuxtPlugin({
     let __temp, __restore;
     let routerBase = (/* @__PURE__ */ useRuntimeConfig()).app.baseURL;
     const history = routerOptions.history?.(routerBase) ?? createMemoryHistory(routerBase);
-    const routes = routerOptions.routes ? ([__temp, __restore] = executeAsync(() => routerOptions.routes(_routes)), __temp = await __temp, __restore(), __temp) ?? _routes : _routes;
+    const routes2 = routerOptions.routes ? ([__temp, __restore] = executeAsync(() => routerOptions.routes(_routes)), __temp = await __temp, __restore(), __temp) ?? _routes : _routes;
     let startPosition;
     const router = createRouter({
       ...routerOptions,
@@ -622,7 +627,7 @@ const plugin$1 = /* @__PURE__ */ defineNuxtPlugin({
         }
       },
       history,
-      routes
+      routes: routes2
     });
     nuxtApp.vueApp.use(router);
     const previousRoute = shallowRef(router.currentRoute.value);
@@ -870,15 +875,17 @@ function useRequestEvent(nuxtApp) {
   nuxtApp ||= useNuxtApp();
   return nuxtApp.ssrContext?.event;
 }
-function useRequestURL(opts) {
-  {
-    return getRequestURL(useRequestEvent(), opts);
+function prerenderRoutes(path) {
+  if (!import.meta.prerender) {
+    return;
   }
+  const paths = toArray$1(path);
+  appendHeader(useRequestEvent(), "x-nitro-prerender", paths.map((p) => encodeURIComponent(p)).join(", "));
 }
 const inlineConfig = {
   "nuxt": {},
   "icon": {
-    "provider": "server",
+    "provider": "iconify",
     "class": "",
     "aliases": {},
     "iconifyApiEndpoint": "https://api.iconify.design",
@@ -1149,6 +1156,41 @@ const plugin_MeUvTuoKUi51yb_kBguab6hdcExVXeTtZtTg9TZZBB8 = /* @__PURE__ */ defin
   // For type portability
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
 });
+let routes;
+const prerender_server_sqIxOBipVr4FbVMA9kqWL0wT8FPop6sKAXLVfifsJzk = /* @__PURE__ */ defineNuxtPlugin(async () => {
+  let __temp, __restore;
+  if (!import.meta.prerender || hashMode) {
+    return;
+  }
+  if (routes && !routes.length) {
+    return;
+  }
+  routes ||= Array.from(processRoutes(([__temp, __restore] = executeAsync(() => routerOptions.routes?.(_routes)), __temp = await __temp, __restore(), __temp) ?? _routes));
+  const batch = routes.splice(0, 10);
+  prerenderRoutes(batch);
+});
+const OPTIONAL_PARAM_RE = /^\/?:.*(?:\?|\(\.\*\)\*)$/;
+function shouldPrerender(path) {
+  return crawlLinks;
+}
+function processRoutes(routes2, currentPath = "/", routesToPrerender = /* @__PURE__ */ new Set()) {
+  for (const route of routes2) {
+    if (OPTIONAL_PARAM_RE.test(route.path) && !route.children?.length && shouldPrerender()) {
+      routesToPrerender.add(currentPath);
+    }
+    if (route.path.includes(":")) {
+      continue;
+    }
+    const fullPath = joinURL(currentPath, route.path);
+    {
+      routesToPrerender.add(fullPath);
+    }
+    if (route.children) {
+      processRoutes(route.children, fullPath, routesToPrerender);
+    }
+  }
+  return routesToPrerender;
+}
 const plugins = [
   payloadPlugin,
   unhead_k2P3m_ZDyjlr2mMYnoDPwavjsDN8hBlk9cFai0bbopU,
@@ -1156,7 +1198,8 @@ const plugins = [
   revive_payload_server_MVtmlZaQpj6ApFmshWfUWl5PehCebzaBf2NuRMiIbms,
   plugin,
   components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4,
-  plugin_MeUvTuoKUi51yb_kBguab6hdcExVXeTtZtTg9TZZBB8
+  plugin_MeUvTuoKUi51yb_kBguab6hdcExVXeTtZtTg9TZZBB8,
+  prerender_server_sqIxOBipVr4FbVMA9kqWL0wT8FPop6sKAXLVfifsJzk
 ];
 const defineRouteProvider = (name = "RouteProvider") => defineComponent({
   name,
@@ -1245,8 +1288,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "app",
   __ssrInlineRender: true,
   setup(__props) {
-    const requestUrl = useRequestURL();
-    const siteUrl = requestUrl.origin;
+    const config = /* @__PURE__ */ useRuntimeConfig();
+    const siteUrl = String(config.public.siteUrl).replace(/\/$/, "");
     const socialImage = `${siteUrl}/images/social/memora-catalogo.jpg`;
     useSeoMeta({
       title: "Memora | Velas personalizadas",

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const requestUrl = useRequestURL()
-const siteUrl = requestUrl.origin
+const config = useRuntimeConfig()
+const siteUrl = String(config.public.siteUrl).replace(/\/$/, '')
 const socialImage = `${siteUrl}/images/social/memora-catalogo.jpg`
 
 useSeoMeta({

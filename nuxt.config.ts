@@ -1,14 +1,19 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
+    }
+  },
   experimental: {
     appManifest: false
   },
   css: ['~/components/ui/assets/css/tailwind.css'],
   modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@pinia/nuxt'],
   nitro: {
-    externals: {
-      trace: false
+    prerender: {
+      routes: ['/', '/veladetail']
     }
   },
   app: {
