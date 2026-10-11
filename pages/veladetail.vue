@@ -1,23 +1,27 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import CandleCustomizerFrame from '~/components/elements/CandleCustomizerFrame.vue'
 import FloatingCartPopup from '~/components/elements/FloatingCartPopup.vue'
 import { UseDataEstore } from '~/store/store'
 import { useEssenceStore } from '~/store/data'
 import { storeToRefs } from 'pinia'
+import { candleModels } from '~/store/candles'
+import type { CandleOption } from '~/store/store'
 
 const store = UseDataEstore()
 const essenceStore = useEssenceStore()
 const { essences } = storeToRefs(essenceStore)
 
-const agregarPersonalizada = (opciones: { color: string; forma: string; fragancia: string; imagen: string }) => {
-  const formaSlug = opciones.forma.toLowerCase().replaceAll(' ', '-')
+const agregarPersonalizada = (opciones: CandleOption & { imagen: string; formaSlug: string }) => {
+  const model = candleModels.find((item) => item.slug === opciones.formaSlug)
+  if (!model || model.price === null) return
+  const formaSlug = model.slug
   const colorSlug = opciones.color.toLowerCase()
 
   store.agregarAlCarrito({
     id: `vela-personalizada-${formaSlug}-${colorSlug}-${opciones.fragancia.toLowerCase().replaceAll(' ', '-')}`,
-    nombre: `Vela + ${opciones.fragancia}`,
+    nombre: `${model.name} + ${opciones.fragancia}`,
     descripcion: 'Personaliza tu vela',
-    precio: 36000,
+    precio: model.price,
     imagen: opciones.imagen,
     opciones: {
       color: opciones.color,

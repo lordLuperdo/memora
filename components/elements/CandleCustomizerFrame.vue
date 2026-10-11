@@ -1,6 +1,6 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import type { CandleOption } from '~/store/store'
-import BrandLogo from '~/components/elements/BrandLogo.vue'
+import { candleModels, candleColors, candleImage, formatCandlePrice } from '~/store/candles'
 
 type Essence = {
   id: string
@@ -16,31 +16,14 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits<{
-  add: [options: CandleOption & { imagen: string }]
+  add: [options: CandleOption & { imagen: string; formaSlug: string }]
 }>()
 
-const colors = [
-  { name: 'Rosa', slug: 'rosa', value: '#f4b4a8' },
-  { name: 'Verde', slug: 'verde', value: '#8faf72' },
-  { name: 'Crema', slug: 'crema', value: '#f7d99e' },
-  { name: 'Azul', slug: 'azul', value: '#9fc9dc' }
-]
-
-const shapes = [
-  { name: 'Quemador clásico', slug: 'quemador-clasico', iconSrc: '/images/velas/icons/quemador-clasico.svg' },
-  { name: 'Cilindro de burbujas', slug: 'cilindro-burbujas', iconSrc: '/images/velas/icons/cilindro-burbujas.svg' },
-  { name: 'Quemador curvo', slug: 'quemador-curvo', iconSrc: '/images/velas/icons/quemador-curvo.svg' },
-  { name: 'Cilindro de corazones', slug: 'cilindro-corazones', iconSrc: '/images/velas/icons/cilindro-corazones.svg' },
-  { name: 'Árbol floral', slug: 'arbol-floral', iconSrc: '/images/velas/icons/arbol-floral.svg' },
-  { name: 'Quemador cuadrado', slug: 'quemador-cuadrado', iconSrc: '/images/velas/icons/quemador-cuadrado.svg' },
-  { name: 'Cubo de burbujas', slug: 'cubo-burbujas', iconSrc: '/images/velas/icons/cubo-burbujas.svg' },
-  { name: 'Caja de rosas', slug: 'caja-rosas', iconSrc: '/images/velas/icons/caja-rosas.svg' },
-  { name: 'Oso floral', slug: 'oso-floral', iconSrc: '/images/velas/icons/oso-floral.svg' },
-  { name: 'Cubo de flores', slug: 'cubo-flores', iconSrc: '/images/velas/icons/cubo-flores.svg' }
-]
+const colors = candleColors
+const shapes = candleModels
 
 const selectedColor = ref(colors[3])
-const selectedShape = ref(shapes[0])
+const selectedShape = ref(shapes[1])
 const selectedEssence = ref<Essence | null>(props.essences[0] ?? null)
 const imageHasError = ref(false)
 const isFragranceOpen = ref(false)
@@ -65,7 +48,7 @@ const scrollShapes = (direction: -1 | 1) => {
 }
 
 const velachoicen = computed(() => {
-  const imageName = `/images/velas/vela${selectedShape.value.slug}${selectedColor.value.slug}.png`
+  const imageName = candleImage(selectedShape.value.slug, selectedColor.value.slug)
 
   return {
     color: selectedColor.value.name,
@@ -84,11 +67,13 @@ const selectEssence = (essence: Essence) => {
 }
 
 const addToCart = () => {
+  if (selectedShape.value.price === null) return
   emit('add', {
     color: velachoicen.value.color,
     forma: velachoicen.value.forma,
     fragancia: velachoicen.value.fragancia,
-    imagen: velachoicen.value.imageSrc
+    imagen: velachoicen.value.imageSrc,
+    formaSlug: selectedShape.value.slug
   })
 }
 
@@ -112,34 +97,40 @@ onBeforeUnmount(() => {
 
     <div class="grid gap-8 md:grid-cols-[1.05fr_0.95fr] md:items-center md:gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
       <div>
-        <div class="relative mx-auto mt-5 h-[235px] max-w-[300px] md:h-[430px] md:max-w-[430px] lg:h-[500px] lg:max-w-[520px]">
-          <div class="absolute left-1 top-8 z-10 flex w-10 flex-col items-center gap-3 rounded-full bg-memora-ink px-2 py-3 md:left-2 md:top-20 md:w-12 md:gap-4 lg:left-4 lg:top-24 lg:w-14 lg:py-5">
+        <div class="relative mx-auto mt-5 w-full max-w-[500px] pl-12 md:pl-16">
+          <div class="absolute left-0 top-1/2 z-10 flex -translate-y-1/2 flex-col items-center gap-3 rounded-full bg-memora-ink px-2 py-3 md:gap-4">
             <button
               v-for="color in colors"
               :key="color.slug"
               :aria-label="color.name"
-              class="h-5 w-5 rounded-full border-2 md:h-7 md:w-7 lg:h-8 lg:w-8"
+              :aria-pressed="selectedColor.slug === color.slug"
+              :title="color.name"
+              class="h-6 w-6 rounded-full border-2 md:h-7 md:w-7"
               :class="selectedColor.slug === color.slug ? 'border-white' : 'border-transparent'"
               :style="{ backgroundColor: color.value }"
               @click="selectedColor = color"
             />
           </div>
-
-          <div class="absolute bg-slate-400 -left-2 top-0 flex h-52 w-full items-center justify-center rounded-lg md:left-14 md:h-[390px] md:w-[360px] lg:left-20 lg:h-[460px] lg:w-[420px]">
+          <div class="flex aspect-square w-full items-center justify-center overflow-hidden rounded-lg bg-neutral-200">
             <img
               v-if="!imageHasError"
               :src="velachoicen.imageSrc"
               :alt="`${velachoicen.forma} ${velachoicen.color}`"
-              class="object-contain  rounded-lg md:h-[350px] md:w-[330px] lg:h-[420px] lg:w-[390px]"
+              width="627" height="627"
+              class="h-full w-full object-contain"
               @error="imageHasError = true"
             >
-            <div v-else class="h-[170px] w-[185px] rounded-lg bg-neutral-200 md:h-[320px] md:w-[300px]" />
+            <p v-else class="px-6 text-center text-sm">No se pudo cargar la imagen. Prueba otro color.</p>
           </div>
         </div>
       </div>
 
       <div class="mx-auto w-full max-w-[340px] md:max-w-[380px] lg:max-w-[420px]">
         <h2 class="text-center font-brand text-2xl font-medium text-memora-violet md:text-3xl">Forma</h2>
+        <label for="candle-model" class="sr-only">Selecciona un modelo</label>
+        <select id="candle-model" v-model="selectedShape" class="mt-3 w-full rounded-lg border border-memora-violet/30 bg-white px-3 py-2 text-memora-deep">
+          <option v-for="shape in shapes" :key="shape.slug" :value="shape">{{ shape.name }}</option>
+        </select>
         <div class="mt-3 grid grid-cols-[36px_minmax(0,1fr)_36px] items-center gap-1.5">
           <button
             class="flex h-9 w-9 items-center justify-center rounded-full bg-white text-memora-violet shadow-soft transition disabled:cursor-default disabled:opacity-30"
@@ -161,9 +152,11 @@ onBeforeUnmount(() => {
               class="flex h-14 w-14 shrink-0 snap-start items-center justify-center rounded-full border border-[#d9a996] bg-white text-[#c78670]"
               :class="selectedShape.slug === shape.slug ? 'ring-2 ring-memora-violet' : ''"
               :aria-label="shape.name"
+              :aria-pressed="selectedShape.slug === shape.slug"
+              :title="shape.name"
               @click="selectedShape = shape"
             >
-              <img :src="shape.iconSrc" alt="" class="h-8 w-8" aria-hidden="true">
+              <img :src="candleImage(shape.slug, 'rosa')" alt="" class="h-12 w-12 rounded-full object-cover" loading="lazy" aria-hidden="true">
             </button>
           </div>
 
@@ -175,6 +168,12 @@ onBeforeUnmount(() => {
           >
             <Icon name="ph:caret-right-bold" class="h-5 w-5" />
           </button>
+        </div>
+
+        <div class="mt-4 text-center" aria-live="polite">
+          <p class="font-bold text-memora-deep">{{ selectedShape.name }}</p>
+          <p class="mt-1 text-2xl font-bold text-memora-violet">{{ selectedShape.price === null ? 'Precio por confirmar' : formatCandlePrice(selectedShape.price) }}</p>
+          <p v-if="selectedShape.note" class="mt-1 text-sm">{{ selectedShape.note }}</p>
         </div>
 
         <h2 class="mt-5 text-center font-brand text-2xl font-medium text-memora-violet md:text-3xl">Esencias</h2>
@@ -199,8 +198,8 @@ onBeforeUnmount(() => {
           </div>
         </div>
 
-        <button class="mt-4 w-full rounded bg-memora-ink px-4 py-3 text-lg font-bold text-white" @click="addToCart">
-          Agregar al carrito
+        <button :disabled="selectedShape.price === null" class="mt-4 w-full rounded bg-memora-ink px-4 py-3 text-lg font-bold text-white disabled:cursor-not-allowed disabled:opacity-50" @click="addToCart">
+          {{ selectedShape.price === null ? 'Precio pendiente de confirmar' : 'Agregar al carrito' }}
         </button>
       </div>
     </div>

@@ -471,7 +471,7 @@ const _routes = [
   {
     name: "veladetail",
     path: "/veladetail",
-    component: () => import("./_nuxt/veladetail-CKJOm1Z3.js")
+    component: () => import("./_nuxt/veladetail-6Iq6c5Na.js")
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;

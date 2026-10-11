@@ -492,7 +492,7 @@ const _routes = [
   {
     name: "veladetail",
     path: "/veladetail",
-    component: () => import('./veladetail-CKJOm1Z3.mjs')
+    component: () => import('./veladetail-6Iq6c5Na.mjs')
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
